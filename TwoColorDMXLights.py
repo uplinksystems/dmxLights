@@ -8,6 +8,7 @@ def send_rgb(dev, red, green, blue):
     cv[0] = red
     cv[1] = green
     cv[2] = blue
+    cv[6] = 255
     sent = dev.send_multi_value(1, cv)
     return sent
 
